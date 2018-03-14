@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet"  type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Ulises's Goals</h1>
+    </header>
+    <main>
+        <a href="goal.html"><button onclick="catchGoal(1);"><div class="buttonContent">1</div></button></a>
+        <a href="goal.html"><button onclick="catchGoal(2);"><div class="buttonContent">2</div></button></a>
+        <a href="goal.html"><button onclick="catchGoal(3);"><div class="buttonContent">3</div></button></a>
+        <a href="goal.html"><button onclick="catchGoal(4);"><div class="buttonContent">4</div></button></a>
+        <a href="goal.html"><button onclick="catchGoal(5);"><div class="buttonContent">5</div></button></a>
+        <a href="goal.html"><button onclick="catchGoal(6);"><div class="buttonContent">6</div></button></a>    
+    </main>
+    <script>
+        function catchGoal(x){
+            console.log(x);
+            localStorage.setItem("goal",x);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+@import 'normalize.css';
+
+h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    font-size: 50px;
+    padding-top: 35px;
+}
+
+header{
+    height: 10em;
+    width: 100%;
+    background-color: #5ee0e0;
+    margin-top: -35px;
+}
+
+body{
+    background-color: #18dd67;
+    text-align: center;
+}
+
+button{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: #18dd67;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #ffffff;
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+button:hover{
+    font-size: 50px;
+    margin-top: 0.5em;
+}
+.buttonContent{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.backButton{
+    float: left;
+}

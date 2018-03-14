@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="goalName"></h1>
+    </header>
+    <main>
+        <picture id="goalImage">
+
+        </picture>
+    </main>
+    <script>
+        var goalsArray;
+        function chargeGoals(){
+            goalsArray = [
+                "Do my thesis and graduated",
+                "Been an research professor",
+                "Travel to the provinces of Panama I haven't gone",
+                "Travel to other countries",
+                "Work in an UX company like UX studio",
+                "Fix my back"
+            ];
+
+            chargeContent();
+        }
+
+        function chargeContent() {
+            var goalNumber = localStorage.getItem("goal");
+            document.getElementById("goalName").innerHTML = goalsArray[goalNumber-1];
+            var img = document.createElement("img");
+            img.src="goal"+goalNumber+".png";
+            document.getElementById("goalImage").appendChild(img);
+        }
+        window.onload = chargeGoals;
+    </script>
+    <a href="index.html"><button class = "backButton"><div class="buttonContent ">BACK</div></button></a>
+</body>
+
+</html>
